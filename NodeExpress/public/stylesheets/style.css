@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#SDM_LEAD{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+#SDM_BILL{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+#SDM_SKY{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+#SDM_WALL{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+#SDM_ALL{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+#frame{
+}
