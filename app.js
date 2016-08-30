@@ -29,7 +29,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-console.log("[DEBUG] Sigma: " + __dirname);
 app.use(express.static(path.join(__dirname, 'MetaTag_TEST')));
 
 app.use('/', routes);
@@ -75,5 +74,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-console.log("Sigma Exported!")
+console.log("[DEBUG] Sigma Started!")
 module.exports = app;

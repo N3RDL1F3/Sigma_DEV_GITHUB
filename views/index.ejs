@@ -3,8 +3,8 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript" src="../MetaTag_TEST/metaTag.js"crossorigin></script>
-    <script type="text/javascript" src="../public/javascripts/Utility.js"util></script>
+    <script type="text/javascript" src='/metaTag.js'crossorigin></script>
+    <script type="text/javascript" src="/javascripts/Utility.js"util></script>
   </head>
 
   <body>
@@ -12,5 +12,40 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
   <!-- <iframe src="http://www.google.com" id="frame" width="500" height="500" allowfullscreen></iframe> -->
+
+  <div class="mps-wrap">
+    <div class="row-offcanvas" data-toggle="offcanvas2">
+      <div id="mps-adtags">
+        <div class="mps-billboard top">
+          <script>
+            SDM_head.registerAd({
+              defnet: '4444',
+              defsite: 'menshealth.de_sd',
+              defzone: 'Startseite',
+              size: '728x90,728x180,770x250,800x250,970x250',
+              adset: 'brsl',
+              name: 'banner',
+              display: true,
+              writeTargetDiv: true,
+              targetDiv: 'div-gpt-ad-banner'
+            });
+          </script>
+          <!-- ###_banner_banner_1_### --></div>
+        <div class="mps-sky">
+          <script>
+            SDM_head.registerAd({
+              defnet: '4444',
+              defsite: 'menshealth.de_sd',
+              defzone: 'Startseite',
+              size: '120x600,160x600,200x600,300x600',
+              adset: 'brsl',
+              name: 'sky',
+              display: true,
+              writeTargetDiv: true,
+              targetDiv: 'div-gpt-ad-sky'
+            });
+          </script>
+        </div>
+      </div>
   </body>
 </html>

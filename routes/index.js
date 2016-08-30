@@ -1,5 +1,3 @@
-require('metaTag');
-
 var express = require('express');
 var router = express.Router();
 
@@ -18,7 +16,3 @@ router.get('/SDM_LEADER', function (req, res,html) {
 });*/
 
 module.exports = router;
-
-setup = function(){
-
-}

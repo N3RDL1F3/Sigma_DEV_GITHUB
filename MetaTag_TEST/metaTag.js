@@ -3749,7 +3749,7 @@ getSDG()[getSDG().getSetup().SYSTEM.MODULES].Meetrics.prototype = {
 };
 getSDG()[getSDG().getSetup().SYSTEM.MODULES].Postscribe = function ()
 {
-    this.scriptNode = getSDG().getUtil().loadAsynchronousScript('../../src/externals/postscribe.js', document.getElementsByTagName('head')[0], function ()
+    this.scriptNode = getSDG().getUtil().loadAsynchronousScript('libraries/postscribe.min.js', document.getElementsByTagName('head')[0], function ()
     {
         getSDG().getRes().get(getSDG().getSetup().RESOURCES.POSTSCRIBE).loadStatus = 'loaded';
         getSDG().getEventDispatcher().trigger('SDG_POSTSCRIBE_RESOURCE_LOADED');
