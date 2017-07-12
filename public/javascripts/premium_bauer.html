@@ -1,0 +1,217 @@
+
+<script>
+    var myDomain = document.domain;
+    var imgURL = [%image_url%];
+    var title = [%title%];
+    var teaser_text = [%teaser_text%];
+    var ID_1 = 'tteaser_';
+    var ID_2 = %%CACHEBUSTER%%
+    var ID = ID_1.concat(ID_2.toString());
+    var showLabel = [%show_Label%]
+
+    var container_Div = document.createElement('div');
+    container_Div.id = "CONTAINER_DIV";
+
+    if (myDomain.search(/wunderweib.de/) != -1 || myDomain.search(/astrowoche/) != -1 || myDomain.search(/wohnidee/) != -1 )  {
+
+       var html_tag = "<section id=ID class='box w-6 teaser teaser--2col' >";
+       html_tag += "<a href='#'>"
+       html_tag += "<figure class='teaser__image'>";
+       html_tag += "<img src='imgURL'/>";
+       html_tag += "<span class='badge badge--ul badge--ad'></span>";
+       html_tag += "</figure>";
+       html_tag += "<div class='teaser__content'>";
+       html_tag += "<span class='teaser__roofline typo--teaser-roofline js-ellipsis'>";
+       html_tag += "<span class='teaser__roofline-counter typo--teaser-roofline-counter'>";
+       html_tag += "</span>";
+       html_tag += title;
+       html_tag += "</span>";
+       html_tag += "<h2 class='teaser__headline js-ellipsis typo--teaser-headline'>";
+       html_tag += teaser_text;
+       html_tag += "</h2>"
+       html_tag += "</div>";
+       html_tag += "</a>";
+       html_tag += "</section>";
+      // document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+       window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+       window.top.document.getElementById(window.name + '__container__').innerHTML = html_tag;
+    }
+
+    if (myDomain.search(/autozeitung.de/) != -1) {
+
+        var html_tag = "<section id=ID class='box teaser w-6 typo--teaser typo--teaser-full-2col teaser--full-2col'>";
+        html_tag += "<a href='#'>";
+        html_tag += "<figure class='teaser__image'>";
+        html_tag += "<span>";
+        html_tag += "</span>";
+        html_tag += "<span class='badge badge--ul badge--ad'></span>";
+        html_tag += "<img src='imgURL' alt=''/>";
+        html_tag += "</figure>";
+        html_tag += "<div class='teaser__content'>";
+        html_tag += "<h2 style='word-wrap: break-word;' class='teaser__headline typo--teaser-headline'>";
+        html_tag += title;
+        html_tag += "</h2>";
+        html_tag += "<p style='word-wrap: break-word;' class='teaser__copy typo--teaser-copy is-truncated'>";
+        html_tag += teaser_text;
+        html_tag += "</p>"
+        html_tag += "</div>";
+        html_tag += "</a>";
+        html_tag += "</section>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+    if (myDomain.search(/bravo.de/) != -1) {
+        var html_tag = "<section id='node-373638' class='gridContainer teaser teaserArticle teaserAd teaser2Column' itemscope='' itemtype='http://schema.org/Article'>";
+        html_tag += "<div class='grid'>";
+        if(showLabel == 0)
+        {
+            html_tag += "<div class='contentMarker icon teaserAd'>Anzeige</div>";
+        }
+        html_tag += " <a href='#' title=''>";
+        html_tag += "<div class='image-overlay-wrapper '><img src='imgURL' alt='' title='' height='300' width='300'></div>";
+        html_tag += " </a>";
+        html_tag += "</div>";
+        html_tag += "<div class='grid'>";
+        html_tag += "<h2 class='headline' itemprop='name'>";
+        html_tag += "<a href='#' title=''>";
+        html_tag += title;
+        html_tag += "</a>";
+        html_tag += "</h2>"
+        html_tag += "</div>";
+        html_tag += "</section>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+    if (myDomain.search(/cosmopolitan.de/) != -1) {
+        var html_tag = "<li id=ID class='tsr col_1_1 type_00_standard'>";
+        html_tag += " <a href='#' title=''>";
+        html_tag += "<figure class='tsr anzeige'>";
+        html_tag += "<img src='imgURL' width='300' height='300' alt='' title=''>";
+        html_tag += "</figure>";
+        html_tag += "<div class='text'>";
+        html_tag += "<h2>";
+        html_tag += title;
+        html_tag += "</h2>";
+        html_tag += "<h3 class='icon-arrow_next'>";
+        html_tag += teaser_text;
+        html_tag += "</h3>"
+        html_tag += "</div>";
+        html_tag += "</a>";
+        html_tag += "</li>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+     if (myDomain.search(/intouch.de/) != -1) {
+        var html_tag = "<section id=ID class='box w-6 h-3 black'>";
+        html_tag += "  <section class='teaser spyglass-double'>";
+        html_tag += "<a href='%'>";
+        html_tag += "<figure>";
+        html_tag += "<img src='imgURL' style='height: 259.983px; width: inherit; display: inline;'>";
+        html_tag += "</figure>";
+        html_tag += "<label class='topic icon icon-hach big'></label>";
+        html_tag += "<div class='text'>";
+        html_tag += "<section class='background'>";
+        if(showLabel == 0){
+        html_tag += "<span class='marker hach'>ANZEIGE</span><br>";
+        }
+        html_tag += "<h2>";
+        html_tag += title;
+        html_tag += "</h2>";
+        html_tag += "</section>";
+        html_tag += "</div>";
+        html_tag += "</a>";
+        html_tag += "</section>";
+        html_tag += "</section>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+    if (myDomain.search(/lecker.de/) != -1) {
+        var html_tag = "<section id=ID class='teaser teaser--full-2col box w-6' >";
+        html_tag += "<a href='#'>";
+        html_tag += "<figure class='image'>";
+        html_tag += "<img src='imgURL'/>";
+        html_tag += "<span class='badge badge--ul badge--ad'></span>";
+        html_tag += "</figure>";
+        html_tag += "<div class='text'>";
+        html_tag += " <div class='title'>";
+        html_tag += "<h2>";
+        html_tag += title;
+        html_tag += "</h2>";
+        html_tag += "</div>";
+        html_tag += "<p>";
+        html_tag += teaser_text;
+        html_tag += "</p>";
+        html_tag += "<div class='teaser__optical-link'>Zum Artikel<span class='icon icon-arrow_link'></span></div>";
+        html_tag += "</div>";
+        html_tag += "</a>";
+        html_tag += "</section>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+
+    if (myDomain.search(/liebenswert.de/) != -1) {
+        var html_tag = "<section id=ID  class='box teaser w-6 teaser--border teaser--2col'>";
+        html_tag += "<a href='#'>";
+        html_tag += "<figure class='teaser__image'>";
+        html_tag += "<img src='imgURL' alt=''>";
+        html_tag += "</figure>";
+        html_tag += "<div class='teaser__content'>";
+        if(showLabel == 0) {
+            html_tag += "<span class='teaser__roofline typo--teaser-roofline' style='word-wrap: break-word;'>Anzeige</span>";
+        }
+        html_tag += "<span class='teaser__roofline-border'></span>";
+        html_tag += "<h2 class='teaser__headline typo--teaser-headline'>";
+        html_tag += title;
+        html_tag += "</h2>";
+        html_tag += "<p class='teaser__copy typo--teaser-copy'>";
+        html_tag += teaser_text;
+        html_tag += "</p>";
+        html_tag += "</div>";
+        html_tag += "</a>";
+        html_tag += "</section>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+
+    if (myDomain.search(/maennersache.de/) != -1) {
+        var html_tag = "<section id=ID  class='box teaser w-6 teaser--2col'>";
+        html_tag += "<a href='%'>";
+        html_tag += "<figure class='teaser__image'>";
+        html_tag += "<span class='badge badge--ur badge--ad'></span>";
+        html_tag += "<span class='badge badge--ll badge--category typo--teaser-badge-category'>";
+        html_tag += title;
+        html_tag += "</span>";
+        html_tag += "<img src='imgURL' alt=''>";
+        html_tag += "</figure>";
+        html_tag += "<div class='teaser__content'>";
+        html_tag += "<h2 class='teaser__headline typo--teaser-headline is-truncated'>";
+        html_tag += teaser_text;
+        html_tag += "</h2>";
+        html_tag += "</div>";
+        html_tag += "</a>";
+        html_tag += "</section>";
+        document.getElementById('CONTAINER_DIV').innerHTML = html_tag;
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        window.top.document.getElementById(window.name + '__container__').appendChild(container_Div);
+    }
+
+    /*
+    //hang out of iFrame
+    if (window.top !== window) {
+        window.top.document.getElementById(window.name).style.cssText = 'display: none;';
+        var _teaser = document.getElementById('tteaser_%%CACHEBUSTER%%');
+        window.top.document.getElementById(window.name + '__container__').appendChild(_teaser);
+    } */
+</script>

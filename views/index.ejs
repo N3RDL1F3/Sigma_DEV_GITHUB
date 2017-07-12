@@ -1,53 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript" src='/metaTag.js'crossorigin></script>
-    <script type="text/javascript" src="/javascripts/Utility.js"util></script>
+<head>
+  <title>SDM Sigma</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="http://cdn.stroeerdigitalmedia.de/Ads/Aaron_CDN_Test/Meta/metaTag.js"></script>
+    <script>
+    /*
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+
+    googletag.cmd.push(function(){googletag.pubads().set("adsense_background_color", "FFFFFF")});
+
+    googletag.cmd.push(function() {
+      googletag.defineSlot("/4444/giga.de_sd/Startseite", [728, 90], "div-gpt-ad-123456789-0")
+              .addService(googletag.pubads());
+      console.log('register ad 1');
+      googletag.defineSlot("/4444/giga.de_sd/Startseite", [[120, 600], [160, 600],[300,600]], "div-gpt-ad-123456789-1")
+              .addService(googletag.pubads());
+      console.log('register ad 2');
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    }); */
+    </script>
   </head>
+<body>
 
-  <body>
-  <a href="SDM_LEADER" id="SDM_LEAD">Leaderboard</a>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  <!-- <iframe src="http://www.google.com" id="frame" width="500" height="500" allowfullscreen></iframe> -->
+<h1>SDM Sigma</h1>
+<p>Welcome to SDM Sigma</p>
 
-  <div class="mps-wrap">
-    <div class="row-offcanvas" data-toggle="offcanvas2">
-      <div id="mps-adtags">
-        <div class="mps-billboard top">
-          <script>
-            SDM_head.registerAd({
-              defnet: '4444',
-              defsite: 'menshealth.de_sd',
-              defzone: 'Startseite',
-              size: '728x90,728x180,770x250,800x250,970x250',
-              adset: 'brsl',
-              name: 'banner',
-              display: true,
-              writeTargetDiv: true,
-              targetDiv: 'div-gpt-ad-banner'
-            });
-          </script>
-          <!-- ###_banner_banner_1_### --> </div>
-        <div class="mps-sky">
-          <script>
-            SDM_head.registerAd({
-              defnet: '4444',
-              defsite: 'menshealth.de_sd',
-              defzone: 'Startseite',
-              size: '120x600,160x600,200x600,300x600',
-              adset: 'brsl',
-              name: 'sky',
-              display: true,
-              writeTargetDiv: true,
-              targetDiv: 'div-gpt-ad-sky'
-            });
-          </script>
-        </div>
-      </div>
-    </div>
-   </div>
-  </body>
+<div id="div-banner"></div>
+<!--
+<div id="BannerList">
+  <form action="select.html">
+    <label>Banner:
+      <select name="ad">
+        <option>Leaderboard</option>
+        <option>Sky</option>
+        <option>Rectangle</option>
+        <option>Billboard</option>
+        <option>Wallpaper</option>
+      </select>
+    </label>
+  </form>
+</div>
+
+<script>
+  console.log("HTML--------------------------------------"+help);
+</script>
+
+<div id="TemplateList">
+  <form action="#">
+    <label>Template:
+      <select name="template">
+        <option>SDM_WP_Handler</option>
+        <option>Coming Soon...</option>
+        <option>Coming Soon...</option>
+        <option>Coming Soon...</option>
+        <option>Coming Soon...</option>
+      </select>
+    </label>
+  </form>
+</div>
+
+<div id="SiteList">
+  <form action="#">
+    <label>Site:
+      <select name="template">
+        <option>Alpin</option>
+        <option>Coming Soon...</option>
+        <option>Coming Soon...</option>
+        <option>Coming Soon...</option>
+        <option>Coming Soon...</option>
+      </select>
+    </label>
+  </form>
+</div> -->
+
+<div id="top_navi"></div>
+<div id="div-gpt-ad-banner"></div>
+<div id="content_1"></div>
+<div id="content_2"></div>
+
+<!--
+<script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+
+      console.log('regestering ad');
+
+      SDM_head.registerAd({
+        defnet: '4444',
+        defsite: 'giga.de_sd',
+        defzone: 'Startseite',
+        size: '728x90,728x180,770x250,800x250,970x250',
+        adset: 'brsl',
+        name: 'banner',
+        display: true,
+        writeTargetDiv: true,
+        targetDiv: 'div-gpt-ad-banner'
+      });
+
+
+      SDG.registerAd();
+    </script> -->
+<!--
+   <script>
+      SDM_head.registerAd({
+        defnet: '4444',
+        defsite: 'menshealth.de_sd',
+        defzone: 'Startseite',
+        size: '120x600,160x600,200x600,300x600',
+        adset: 'brsl',
+        name: 'sky',
+        display: true,
+        writeTargetDiv: true,
+        targetDiv: 'div-gpt-ad-sky'
+      });
+    </script>
+
+-->
+<!--
+<div id="div-gpt-ad-123456789-0" style= "width: 728px; height: 90px">
+  <script type="text/javascript">
+ // googletag.display("div-gpt-ad-123456789-0");
+  //console.log('DIV 0');
+  </script>
+</div>
+
+<div id="div-gpt-ad-123456789-1"  style= "width: 300px; height: 600px">
+   	    <script type="text/javascript">
+  //        googletag.display("div-gpt-ad-123456789-1");
+    //      console.log('DIV 1');
+        </script>
+</div>
+-->
+
+<script>
+  SDG.Publisher.setZone('startseite');
+  SDG.Publisher.registerSlot('banner',document.getElementById('div-banner'));
+  SDG.Publisher.loadSlot('banner');
+
+  var tab = getSDG().getCore().get(getSDG().getSetup().RESOURCES.TABOOLA);
+  tab.insertArticle('thumbnails-a','Below Article Thumbnails','Taboola_Test','content_2','mix');
+  tab.execute();
+  console.log("Taboola Instance: " ,tab);
+</script>
+</body>
 </html>

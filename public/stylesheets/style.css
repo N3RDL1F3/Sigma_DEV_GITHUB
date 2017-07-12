@@ -7,34 +7,44 @@ a {
   color: #00B7FF;
 }
 
-#SDM_LEAD{
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+#TemplateList
+{
+  position:relative;
+  top:14px;
 }
 
-#SDM_BILL{
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+#top_navi{
+  position: relative;
+  width: 1000px;
+  height:200px;
+  background-color: #00B7FF;
+  margin: 100px 10px 100px 10px;
 }
 
-#SDM_SKY{
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+#content_1{
+  position: relative;
+  width: 680px;
+  height:200px;
+  margin-top: 10px;
+  background-color: #00B7FF;
+  margin: 100px 10px 100px 10px;
 }
 
-#SDM_WALL{
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+#content_2 {
+  position: relative;
 }
 
-#SDM_ALL{
+
+.Sigma_Ads {
+  position: relative;
+  top:100px;
+  border-color: #2B2922;
   border-style: solid;
-  border-width: thin;
-  border-color: black;
+}
+
+#SiteList {
+  position:relative;
+  top:30px;
 }
 
 #frame{
